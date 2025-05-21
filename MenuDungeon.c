@@ -33,9 +33,9 @@ printf("***                                                    ***\n");
 printf("**********************************************************\n");
 printf("**********************************************************\n\n");
 printf("1) Jogar\n");
-printf("2) Crédito\n");
+printf("2) CrÃ©dito\n");
 printf("3) Sair\n");
-printf("\nInsira a opção desejada --> ");
+printf("\nInsira a opÃ§Ã£o desejada --> ");
 scanf("%c", &numero);
 switch (numero)
 
@@ -46,7 +46,7 @@ switch (numero)
 	printf("**********************************************************\n");
 	printf("**********************************************************\n");
     printf("***                                                    ***\n");
-	printf("***                 Bem-vindo à VILA                   ***\n"); 
+	printf("***                 Bem-vindo Ã  VILA                   ***\n"); 
 	printf("***                                                    ***\n");
 	printf("**********************************************************\n");
 	printf("**********************************************************\n\n");
@@ -133,7 +133,10 @@ switch (numero)
 		{
 			if (tecla == 'i')
 			{
+				if (x == 7 && y == 6 || x == 6 && y == 7)
+				{
 				mapavila[5][9] = '=';
+				}
 			}
 		}
 
@@ -149,7 +152,7 @@ switch (numero)
 	 {
 	 	system ("cls");
         printf("\n=======================================================================\n");
-        printf("==================   Feito por: Júlia Labad Jatene   ==================\n");
+        printf("==================   Feito por: JÃºlia Labad Jatene   ==================\n");
         printf("=======================================================================\n");
         printf("\n\nPressione qualquer tecla para voltar ao menu principal...\n\n");
    	    getch();
