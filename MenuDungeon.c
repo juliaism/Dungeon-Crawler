@@ -3,19 +3,25 @@
 #include <locale.h>
 #include <string.h>
 #include <conio.h>
+#include <Windows.h>
 
 
 char numero;
 char tecla;
 int i, j;
+int l,k;
 char mapavila[10][10];
 char mapaum[10][10];
 char mapadois[20][20];
 char mapatres[40][40];
 int y = 8;
 int x = 1;
+int u = 8;
+int t = 1;
 char interagir;
 int D;
+char faseum;
+
 
 
 int main()
@@ -42,6 +48,7 @@ switch (numero)
  {
  	case '1':
 	 {
+    //VILA
 	 	 	system("cls");
 	printf("**********************************************************\n");
 	printf("**********************************************************\n");
@@ -56,30 +63,23 @@ switch (numero)
    	    system("cls");
    	     for (i = 0; i < 10; i++)
 			{
-        for(j = 0; j < 10; j++)
-		{
-            if (i == 0 || j == 0 || i == 9 || j == 9)
-			{
+             for(j = 0; j < 10; j++)
+		     {
+              if (i == 0 || j == 0 || i == 9 || j == 9)
+			   {
                 mapavila[i][j] = '*';
-            }
-            if (i == 0 || j == 0 || i == 9 || j == 9)
-			{
                 mapavila[1][1] = 'P';
-            }
-            if (i == 0 || j == 0 || i == 9 || j == 9)
-			{
+                mapavila[1][5] = 'P';
                 mapavila[5][9] = 'D';
-            }
-            if (i == 0 || j == 0 || i == 9 || j == 9)
-			{
                 mapavila[8][8] = '@';
-            }
-			 else 
-			{
+               }
+            
+			  else 
+			   {
                 mapavila[i][j] = ' ';
+               }
+             }
             }
-        }
-    }
 
     mapavila[y][x] = '&';
 
@@ -115,7 +115,7 @@ switch (numero)
 
         if (tecla == 's')
 		{
-            if (mapavila[y+1][x] != '*' && mapavila[y+1][x] != '@' )
+            if (mapavila[y+1][x] != '*' && mapavila[y+1][x] != '@')
 			{
                 y++;
             }
@@ -123,28 +123,167 @@ switch (numero)
 
         if (tecla == 'd')
 		{
-            if (mapavila[y][x+1] != '*' && mapavila[y][x+1] != 'D' && mapavila[y][x+1] != '@')
+			
+            if (mapavila[y][x+1] != '*' && mapavila[y][x+1] != 'D' && mapavila[y][x+1] != '@' && mapavila[y][x+1] != 'P' )
 			{
                 x++;
             }
+            
         }
-        
-		
-		{
-			if (tecla == 'i')
-			{
-				if (x == 7 && y == 6 || x == 6 && y == 7)
+	       if (tecla == 'i')
+            {
+           	if (x == 4 && y == 1 || x == 6 && y == 1 || x == 5 && y == 2)
+                {
+                printf("NPC_2:Fuja dos monstros, desvie dos espinhos e colete as chaves para vencer!");
+                Sleep(2500);
+				}
+			if (x == 7 && y == 8 || x == 8 && y == 7)
 				{
 				mapavila[5][9] = '=';
 				}
+            if (x == 1 && y == 2 || x == 2 && y == 1)
+                {
+                printf("NPC_1:Use as teclas 'A','W','S','D' para se movinmentar e 'i' para interagir!");
+                Sleep(2500);
+				}
 			}
+	
+		if (x == 9 && y == 5)
+		{
+			printf("Digite 'v' para avançar de fase --> ");
+			Sleep(2500);
+            scanf("%c", &faseum);
+            switch (faseum)
+            {
+				case 'v':
+				{
+					goto mapaum;
+					system("cls");
+				}
+				break;
+					
+			}
+			
 		}
-
-        mapavila[y][x] = '&';
-        system("cls");
-        
+		
+      mapavila[y][x] = '&';
+	  system("cls");         
+	 }
+	 
+	 mapaum:
+	system("cls");
+   	     for (l= 0; l< 10; l++)
+			{
+        for(k = 0; k < 10; k++)
+		{
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[l][k] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[7][9] = 'D';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[3][4] = '@';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[4][4] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[2][4] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[3][3] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[2][3] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[2][5] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[4][5] = '*';
+            }
+            if (l== 0 || k == 0 || l== 9 || k == 9)
+			{
+                mapaum[4][3] = '*';
+            }
+			 else 
+			{
+                mapaum[l][k] = ' ';
+            }
+        }
     }
-   	    
+
+    mapaum[u][t] = '&';
+
+    while (1)
+    {
+        for (l= 0; l< 10; l++)
+		{
+            for(k = 0; k < 10; k++)
+			{
+                printf("%c ", mapaum[l][k]);
+            }
+            printf("\n");
+        }
+
+        tecla = getch();
+
+        mapaum[u][t] = ' ';
+        if (tecla == 'w')
+		{  
+            if (mapaum[u-1][t] != '*' )
+			{
+                u--;
+            }
+        }
+
+        if (tecla == 'a')
+		{
+            if (mapaum[u][t-1] != '*' && mapaum[u][t-1] != '@')
+			{
+                t--;
+            }
+        }
+
+        if (tecla == 's')
+		{
+            if (mapaum[u+1][t] != '*' )
+			{
+                u++;
+            }
+        }
+
+        if (tecla == 'd')
+		{
+            if (mapaum[u][t+1] != '*' && mapaum[u][t+1] != 'D')
+			{
+                t++;
+            }
+        }
+        
+        if (tecla == i)
+		{
+			if (u == 5 && t == 4)
+				{
+				mapaum[7][9] = '=';
+				}
+		}
+        
+			
+
+        mapaum[u][t] = '&';
+        system("cls");
+	 
 	 }
 	 break; 
  
@@ -173,81 +312,12 @@ switch (numero)
 		exit (0);
 	}
 	
-	case '4':
-	{
-		system("cls");
-		 for (i = 0; i < 20; i++)
-			{
-              for(j = 0; j < 20; j++)
-		       {
-                 if (i == 0 || j == 0 || i == 19 || j == 19)
-			      {
-                  mapadois[i][j] = '*';
-                  }
-			     else 
-			      {
-                   mapadois[i][j] = ' ';
-                  }
-               }
-            }
-
-     mapadois[y][x] = '&';
-
-      while (1)
-     {
-        for (i = 0; i < 20; i++)
-		{
-            for(j = 0; j < 20; j++)
-			{
-                printf("%c ", mapadois[i][j]);
-            }
-            printf("\n");
-        }
-        tecla = getch();
-
-        mapadois[y][x] = ' ';
-        if (tecla == 'w')
-		{  
-            if (mapadois[y-1][x] != '*' )
-			{
-                y--;
-            }
-        }
-
-        if (tecla == 'a')
-		{
-            if (mapadois[y][x-1] != '*' )
-			{
-                x--;
-            }
-        }
-
-        if (tecla == 's')
-		{
-            if (mapadois[y+1][x] != '*' )
-			{
-                y++;
-            }
-        }
-
-        if (tecla == 'd')
-		{
-            if (mapadois[y][x+1] != '*' )
-			{
-                x++;
-            }
-        }
-			
-
-        mapadois[y][x] = '&';
-        system("cls");
-	 }
+	
+	
+		
 	
 
    }
-     break;
-     
-
+   return 0;
   }
-    return 0;
 }
