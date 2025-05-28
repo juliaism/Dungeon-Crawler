@@ -13,6 +13,7 @@ ctype.h - manipulação de caracteres
 conio.h - para utilizar getch() 
 locale.h - implementar a norma-padrão 
 time.h - para obter resultados randômicos diferentes
+Windows.h - para utilizar Sleep()
 
 ⚙️ Pré-Requisitos
 Nesse código foi necessário adicionar ao compilador do Falcon C++ as bibliotecas -std=c99 e -std=gnu99 para utilizar a função “for”.
