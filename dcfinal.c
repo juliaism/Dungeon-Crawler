@@ -112,20 +112,20 @@ void menu()
     printf("**********************************************************\n");
     printf("**********************************************************\n\n");
     printf("1) Jogar\n");
-    printf("2) Crédito\n");
+    printf("2) CrÃ©dito\n");
     printf("3) Sair\n");
-    printf("\nInsira a opção desejada --> ");
+    printf("\nInsira a opÃ§Ã£o desejada --> ");
     scanf(" %c", &numero);
 
     switch (numero)
     {
         case '1': 
-            fase3(); 
+            vila(); 
             break;
         case '2':
             system("cls");
             printf("\n=======================================================================\n");
-            printf("==================   Feito por: Júlia Labad Jatene   ==================\n");
+            printf("==================   Feito por: JÃºlia Labad Jatene   ==================\n");
             printf("=======================================================================\n");
             printf("\n\nPressione qualquer tecla para voltar ao menu principal...\n\n");
             getch();
@@ -152,7 +152,7 @@ void vila()
     system("cls");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
-    printf("***                 Bem-vindo à VILA                   ***\n");
+    printf("***                 Bem-vindo Ã  VILA                   ***\n");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
     printf("\nPressione qualquer tecla para continuar...\n\n");
@@ -234,7 +234,7 @@ void fase1()
     system("cls");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
-    printf("***                 Bem-vindo à FASE 1                 ***\n");
+    printf("***                 Bem-vindo Ã  FASE 1                 ***\n");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
     printf("\n\nPressione qualquer tecla para continuar...\n\n");
@@ -365,7 +365,7 @@ void fase2()
     system("cls");
      printf("**********************************************************\n");
     printf("**********************************************************\n");
-    printf("***                 Bem-vindo à FASE 2                 ***\n");
+    printf("***                 Bem-vindo Ã  FASE 2                 ***\n");
     printf("**********************************************************\n");
      printf("**********************************************************\n");
     printf("\nPressione qualquer tecla para continuar...\n\n");
@@ -421,7 +421,7 @@ void fase2()
     vidas--;
 
     system("cls");
-    printf("Você pisou nos espinhos!\nVidas restantes: %d\n", vidas);
+    printf("VocÃª pisou nos espinhos!\nVidas restantes: %d\n", vidas);
     getch();
     Sleep(1725);
     reiniciarFaseD();
@@ -433,7 +433,7 @@ void fase2()
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("***                    GAME OVER                       ***\n");
-        printf("***             Jogue melhor na próxima vez            ***\n");
+        printf("***             Jogue melhor na prÃ³xima vez            ***\n");
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("\nPressione qualquer tecla para voltar ao menu principal...\n");
@@ -472,7 +472,7 @@ if (p == inimigo_x && o == inimigo_y)
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("***                    GAME OVER                       ***\n");
-        printf("***             Jogue melhor na próxima vez            ***\n");
+        printf("***             Jogue melhor na prÃ³xima vez            ***\n");
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("\nPressione qualquer tecla para voltar ao menu principal...\n");
@@ -521,7 +521,7 @@ void fase3()
     system("cls");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
-    printf("***                 Bem-vindo à FASE 3                 ***\n");
+    printf("***                 Bem-vindo Ã  FASE 3                 ***\n");
     printf("**********************************************************\n");
     printf("**********************************************************\n");
     printf("\n\nPressione qualquer tecla para continuar...\n\n");
@@ -622,7 +622,7 @@ void fase3()
          {
          vidas--;
          system("cls");
-         printf("Você pisou nos espinhos!\nVidas restantes: %d\n", vidas);
+         printf("VocÃª pisou nos espinhos!\nVidas restantes: %d\n", vidas);
          getch();
          Sleep(1725);
          reiniciarFaseT();
@@ -634,7 +634,7 @@ void fase3()
         printf("**********************************************************\n");
          printf("**********************************************************\n");
         printf("***                    GAME OVER                       ***\n");
-        printf("***             Jogue melhor na próxima vez            ***\n");
+        printf("***             Jogue melhor na prÃ³xima vez            ***\n");
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("\nPressione qualquer tecla para voltar ao menu principal...\n");
@@ -663,7 +663,7 @@ void fase3()
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("***                    GAME OVER                       ***\n");
-        printf("***             Jogue melhor na próxima vez            ***\n");
+        printf("***             Jogue melhor na prÃ³xima vez            ***\n");
         printf("**********************************************************\n");
         printf("**********************************************************\n");
         printf("\nPressione qualquer tecla para voltar ao menu principal...\n");
@@ -684,7 +684,7 @@ void fase3()
 			printf("**********************************************************\n");
 	        printf("**********************************************************\n");
             printf("***                                                    ***\n");
-	        printf("***                     VITÓRIA                        ***\n"); 
+	        printf("***                     VITÃ“RIA                        ***\n"); 
 	        printf("***                   Bom Trabalho!                    ***\n");
 	        printf("**********************************************************\n");
 	        printf("**********************************************************\n\n");
