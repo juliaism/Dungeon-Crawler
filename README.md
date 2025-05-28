@@ -30,7 +30,11 @@ Nesse código foi necessário adicionar ao compilador do Falcon C++ as bibliotec
 
 🕹️ O Jogo
 
+Nesse jogo o jogador precisa escapar da masmorrabn de uma vila, fugindo de monstros, desviando de espinhos, coletando chaves e escolhendo estrategicamente seus próximos passos.
+
+
 🌐 Símbolos do Jogo
+
 "#" - Espinho
 
 "P" - NPC
