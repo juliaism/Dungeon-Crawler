@@ -3,7 +3,7 @@ Trabalho de algoritmo do segundo bimestre de 2025
 
 🔭 Visão Geral
 
-Esse projeto foi desenvolvido na linguagem C por meio da IDE Falcon C++. Ele consiste em um jogo de 3 fases.
+Esse projeto foi desenvolvido na linguagem C por meio da IDE Falcon C++.
 
 💻 Bibliotecas
 
