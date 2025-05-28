@@ -21,12 +21,12 @@ Nesse código foi necessário adicionar ao compilador do Falcon C++ as bibliotec
 🕹️ O Jogo
 
 🌐 Símbolos do Jogo
-# : Espinho\n
-P: NPC
-V: Monstro nivel 2
-X: Monstro nivel 1
->: Teletransporte
-*: Parede
-D: Porta fechada
-=: Porta aberta
-&: Jogador
+"#" - Espinho
+"P" - NPC
+"V" - Monstro nivel 2
+"X" - Monstro nivel 1
+">" - Teletransporte
+"*" - Parede
+"D" - Porta fechada
+"=" - Porta aberta
+"&" - Jogador
