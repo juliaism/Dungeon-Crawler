@@ -31,6 +31,7 @@ Nesse código foi necessário adicionar ao compilador do Falcon C++ as bibliotec
 🕹️ O Jogo
 
 Nesse jogo o jogador precisa escapar da masmorrabn de uma vila, fugindo de monstros, desviando de espinhos, coletando chaves e escolhendo estrategicamente seus próximos passos.
+
 Para interagir com as Chaves “@“ e os NPCs “P”, pressionar a tecla “i” quando estiver nas coordenadas aos lados, a cima ou embaixo do objeto de interesse.
 
 Para utilizar o Botão “O”, os Teletransportes “>” e a Porta Aberta “=“, ficar nas mesmas coordenadas do objeto de interesse.
