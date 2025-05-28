@@ -1,4 +1,4 @@
-# Dungeon
+# Dungeon Crawler
 Trabalho de algoritmo do segundo bimestre de 2025
 
 🔭 Visão Geral
