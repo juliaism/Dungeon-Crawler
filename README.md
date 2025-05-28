@@ -31,7 +31,11 @@ Nesse código foi necessário adicionar ao compilador do Falcon C++ as bibliotec
 🕹️ O Jogo
 
 Nesse jogo o jogador precisa escapar da masmorrabn de uma vila, fugindo de monstros, desviando de espinhos, coletando chaves e escolhendo estrategicamente seus próximos passos.
+Para interagir com as Chaves “@“ e os NPCs “P”, pressionar a tecla “i” quando estiver nas coordenadas aos lados, a cima ou embaixo do objeto de interesse.
 
+Para utilizar o Botão “O”, os Teletransportes “>” e a Porta Aberta “=“, ficar nas mesmas coordenadas do objeto de interesse.
+
+O Jogador “&” possui 3 vidas que serão descontadas se o Monstro Nivel 1 “X” ou o Monstro Nivel 2 “V” o alcançarem ou se o Jogador tocar nos Espinhos “ # “. Cada vez que perder uma vida a fase será reiniciada. Caso morra 3 vezes, o jogo acabará e o Jogador irá voltar ao Menu Principal.
 
 🌐 Símbolos do Jogo
 
@@ -52,3 +56,9 @@ Nesse jogo o jogador precisa escapar da masmorrabn de uma vila, fugindo de monst
 "=" - Porta aberta
 
 "&" - Jogador
+
+
+👩‍💻 Feito Por:
+
+Júlia Labad Jatene
+
