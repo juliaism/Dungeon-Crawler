@@ -200,7 +200,7 @@ void vila()
 
         // Transição para Fase 1
         if (x == 9 && y == 5) {
-            fase2(); // Agora chama a Fase 1 corretamente
+            fase1(); // Agora chama a Fase 1 corretamente
         }
     }
 }
